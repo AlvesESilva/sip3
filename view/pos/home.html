@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Metadados OG Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="https://oswaldocruz.br/pos" />
+    <meta name="twitter:creator" content="@oswaldocruz1914" />
+
+    <!-- Open Graph Metadados (Facebook e Twitter e Linkedin)-->
+    <meta property='og:url' content='https://oswaldocruz.br/pos' />
+    <meta property='og:type' content='website' />
+    <meta property='og:title' content='Centro de Pós-Graduação e Pesquisa Oswaldo Cruz' />
+
+    <!-- Título Facebook/Linkedin -->
+    <meta property='og:description'
+        content='Em funcionamento desde 1992, o Centro de Pós-Graduação e Pesquisa Oswaldo Cruz contribui para o aperfeiçoamento de líderes em todo pais, são mais de 25.000 especialistas formados. Seja um deles você também.' />
+
+    <!-- Descrição do Facebook -->
+    <meta property="og:image" content="https://oswaldocruz.br/pos/assets/img/predioFaculdadeOswaldoCruz.png" />
+
+    <!--
+		<link rel="icon" href="/sip3/assets/img/favicon.jpeg">
+	-->
+
+    <title>Centro de Pós-Graduação e Pesquisa Oswaldo Cruz</title>
+
+    <link href="/sip3/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/sip3/assets/css/landing-page.min.css" rel="stylesheet">
+    <link href="/sip3/assets/css/pos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <script src="/sip3/assets/css/all.min.js"></script>
+    <script src="/sip3/assets/js/dist/httpRequest.js"></script>
+    <script src="/sip3/assets/js/app/Config.js"></script>
+
+</head>
+
+<body>
+
+    <header class="mb-5">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top mb-5 p-5"
+            style="background-color: #1b2034; border-bottom: 1px solid #ffbb00;">
+            <a class="text-white" href="/pos/"><span class="h1"><i class="fas fa-chart-line"></i>&nbsp;Pós-Graduação</span>
+                <br>
+                <span style="font-size: .87rem;">Centro de Pós-Graduação e Pesquisa Oswaldo Cruz</span>
+            </a>
+        </nav>
+    </header>
+
+    <form>
+        <input type="hidden" id="Config">
+        <input type="hidden" id="IdEnsino" value="4"> <!-- IdEnsino = 4 => Pós-Graduação / Especialização -->
+    </form>
+
+    <div class="container mt-5 mb-3">&nbsp;</div>
+    <div class="container mt-5 mb-3" id="divErro"></div>
+
+    <div class="masthead text-left mt-5" style="background-image: url('/sip3/assets/img/img_topo_pos_20190603.jpg'); background-size: cover; height: 24rem; background-position: center; background-blend-mode: darken;">
+        <div style="height: 21.6rem;">&nbsp;</div>
+        <div class="container pt-2 pb-3" style="background-color: #1b2034; opacity: 1; color: #ffffff; border: 1px solid #1b2034; border-radius: 10px; font-size: .9rem;">
+            <a class="text-white" href="/pos/sip3/">oswaldocruz.br/pos</a>
+        </div>
+    </div>
+
+    <main role="main">
+        <div>
+            <div class="container mt-4">
+                <a class="text-light" href="#Cursos">
+                    <div class="container btn btn-success"><i class="far fa-list-alt"></i>&nbsp;Nossos cursos, de A a Z</div>
+                </a>
+
+                <div class="container mt-4 alert alert-warning alert-dismissible fade show" role="alert">
+                    <h4 class="text-primary"><i class="fas fa-chart-line"></i>&nbsp;<strong>Pós-Graduação</strong></h4>
+                    Adotamos a <b>Atividade Pedagógica Remota</b>, autorizada pelo MEC. Aulas remotas têm se
+                    mostrado
+                    eficientes, evitam deslocamentos e aglomerações, preservam o calendário e proporcionam
+                    vivências com
+                    a
+                    mesma qualidade dos encontros presenciais. Manteremos esse regime enquanto o governo
+                    recomendar e
+                    for mais seguro para toda
+                    nossa comunidade.
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="container mt-4 alert alert-warning alert-dismissible fade show" role="alert">
+                    <h4><a href="https://www.unilivreoswaldocruz.com.br" target="_blabk"><i
+                                class="fas fa-university"></i>&nbsp;<strong>Universidade Livre</strong></a></h4>
+                    Independente do uso do meio remoto em 2021 no nosso centro de Pós-Graduação, informamos a
+                    todos que a <a href="https://www.unilivreoswaldocruz.com.br" target="_blabk">Universidade
+                        Livre Oswaldo Cruz</a> continuará oferecendo esta mesma solução didática ao longo de
+                    todo o ano de 2021.
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="row mt-5 mb-3 text-center">
+                    <div class="col-md-4 mb-4">
+                        <div class="card" style="background-color:#1b2034; border: 1px solid #ffffff; border-radius: 7px;">
+                            <div class="text-center mt-4 ">
+                                <span class="fa-stack fa-4x">
+                                    <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                                    <i class="fas fa-chart-line fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </div>
+                            <div class="card-foc card-body">
+                                <p class="card-text" style="color: #ffffff; padding: 5px;">Desde 1992 o Centro de Pós-Graduação e Pesquisa
+                                    Oswaldo Cruz atua no aperfeiçoamento de líderes. Já são mais de 25.000 formados.</p>
+                                <a href="https://oswaldocruz.br/www/view/quemSomos.asp" class="btn btn-primary">Nossa
+                                    História</a>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-md-4 mb-4">
+                        <div class="card" style="background-color:#1b2034; border: 1px solid #ffffff; border-radius: 7px;">
+                            <div class="text-center mt-4 ">
+                                    <span class="fa-stack fa-4x">
+                                    <i class="fas fa-circle fa-stack-2x text-success"></i>
+                                    <i class="fas fa-chalkboard-teacher fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </div>
+                            <div class="card-foc card-body">
+                                <p class="card-text" style="color: #ffffff; padding: 5px;">Aulas às segundas e quartas, terças e
+                                    quintas, aos sábados ou aos finais de semana. Consulte as cidades
+                                    atendidas em detalhes do curso.</p>
+                                <a href="#Cursos" class="btn btn-success">Nossos Cursos</a>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-md-4 mb-4">
+                        <div class="card" style="background-color:#1b2034; border: 1px solid #ffffff; border-radius: 7px;">
+                            <div class="text-center mt-4 ">
+                                <span class="fa-stack fa-4x">
+                                    <i class="fas fa-circle fa-stack-2x text-warning"></i>
+                                    <i class="fas fa-address-card fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </div>
+                            <div class="card-foc card-body">
+                                <p class="card-text" style="color: #ffffff; padding: 5px;">Podemos adaptar nossos programas de especialização,
+                                    aperfeiçoamento, extensão ou complementação MBA para a modalidade In Company.</p>
+                                <a href="#" data-toggle="modal" data-target="#modalCursosInCompany"
+                                    class="btn btn-warning">In Company</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container mt-5" id="Cursos">
+                    <h4 class="text-secondary"><i class="far fa-handshake"></i>&nbsp;Parceiros</h4>
+                </div>
+                <hr class="bg-secondary">
+                <div class="container">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item h1 active">
+                                <a style="color: #dcdcdc;" href="https://www.sbtox.org/" target="_blank"><img
+                                        class="img-fluid"
+                                        src="/pos/images/parceria/sbtox_logo.jpg">&nbsp;&nbsp;Sbtox</a>
+                            </div>
+                            <div class="carousel-item h1">
+                                <a style="color: #dcdcdc;" href="http://www.citral.com.br/" target="_blank"><img
+                                        class="img-fluid"
+                                        src="/pos/images/parceria/citral_logo.jpg">&nbsp;&nbsp;Citral</a>
+                            </div>
+                            <div class="carousel-item h1">
+                                <a style="color: #dcdcdc;" href="http://www.mane.com/" target="_blank"><img
+                                        class="img-fluid" src="/pos/images/parceria/mane_logo.jpg">&nbsp;&nbsp;Mane</a>
+                            </div>
+                            <div class="carousel-item h3">
+                                <a style="color: #dcdcdc;" href="http://www.raiingredients.com.br/" target="_blank"><img
+                                        class="img-fluid"
+                                        src="/pos/images/parceria/rai_logo.jpg">&nbsp;&nbsp;Raiingredients</a>
+                            </div>
+                            <div class="carousel-item h3">
+                                <a style="color: #dcdcdc;" href="http://www.perkinelmer.com.br/" target="_blank"><img
+                                        class="img-fluid"
+                                        src="/pos/images/parceria/perkinelmer_logo.jpg">&nbsp;&nbsp;Perkinelmer</a>
+                            </div>
+                            <div class="carousel-item h1">
+                                <a style="color: #dcdcdc;" href="http://aqia.net/" target="_blank"><img
+                                        class="img-fluid" src="/pos/images/parceria/aqia_logo.jpg">&nbsp;&nbsp;Aqia</a>
+                            </div>
+                            <div class="carousel-item h1">
+                                <a style="color: #dcdcdc;" href="https://www.symrise.com/" target="_blank">
+                                    <img class="img-fluid"
+                                        src="/pos/images/parceria/symrise_logo.jpg">&nbsp;&nbsp;Symrise</a>
+                            </div>
+                            <div class="carousel-item h1">
+                                <a style="color: #dcdcdc;" href="http://www.iff.com/" target="_blank"><img
+                                        class="img-fluid" src="/pos/images/parceria/iff.jpg">&nbsp;&nbsp;Iff</a>
+                            </div>
+                            <div class="carousel-item h1">
+                                <a style="color: #dcdcdc;" href="http://www.wnf.com.br/" target="_blank"><img
+                                        class="img-fluid" src="/pos/images/parceria/wnf_logo.jpg">&nbsp;&nbsp;Wnf</a>
+                            </div>
+                            <div class="carousel-item h1">
+                                <a style="color: #dcdcdc;" href="http://www.kopiehaus.com.br/" target="_blank"><img
+                                        class="img-fluid"
+                                        src="/pos/images/parceria/kopiehaus_logo.jpg">&nbsp;&nbsp;Kopiehaus</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="bg-secondary">
+
+                <div class="container mt-5 mb-3" id="Cursos">
+                    <h4 class="text-secondary"><i class="far fa-list-alt"></i>&nbsp;Nossos cursos, de A a Z</h4>
+                    <div class="table-responsive" id="tableCursos"><i class="fas fa-spinner fa-pulse"></i></div>
+                   <!--
+                    <h4 class="text-secondary mt-3"><i class="fas fa-book-reader"></i>&nbsp;Quer sugerir um curso?</h4>
+                    <hr class="bg-secondary">
+                    <div class="container text-white mb-5 p-3 bg-secondary" style="opacity: 0.7; border-radius: 10px;">
+                        <form class="form-group">
+                            <label for="inputNome">Sugestão de Curso</label>
+                            <input type="text" id="inputSugestaoCurso" class="form-control mb-3">
+                            <label for="inputSugestaoCurso">Nome</label>
+                            <input type="text" id="inputNomeSugestaoCurso" class="form-control mb-3">
+                            <label for="inputEmailSugestaoCurso">E-mail</label>
+                            <input type="email" id="inputEmailSugestaoCurso" class="form-control mb-3">
+                            <label for="inputCelularSugestaoCurso">Celular</label>
+                            <input type="number" id="inputCelularSugestaoCurso" class="form-control mb-3">
+                            <button class="btn btn-primary mb-0" onclick=" gravaSugestaoCurso();">Enviar
+                                Sugestão</button>
+                        </form>
+                    </div>
+                    -->
+                </div>
+
+                <div class="container mb-5">
+                    <h4 class="text-secondary"><i class="fas fa-stopwatch"></i>&nbsp;Cursos de Curta Duração</h4>
+                    <hr class="bg-secondary">
+                    <p>Conheça a Universidade Livre Oswaldo Cruz - <a
+                            href="https://www.unilivreoswaldocruz.com.br">unilivreoswaldocruz.com.br</a>. Criada para
+                        atender às
+                        recentes dinâmicas do mercado de trabalho, que exigem dos profissionais uma constante
+                        atualização e
+                        ampliação de competências.</p>
+                    <p><a href="https://www.unilivreoswaldocruz.com.br"><img
+                                src="/sip3/assets/img/banner_unilivre_portal.jpg" class="img-fluid shadow"
+                                style="border-color: #1b2034; border-radius: 10px;"></a></p>
+                </div>
+
+    </main>
+
+    <footer class="page-footer p-5 bg-warning" style="color: #1b2034; font-size: .8rem;">
+        <div class="row">
+            <div class="col-12 col-md">
+                <img class="mb-2" src="/sip3/assets/img/brasao.png" alt="" width="142" height="194">
+                <small class="d-block mb-3 text-muted">&copy; 1914-2020</small>
+            </div>
+            <div class="col-6 col-md">
+                <h6><i class="fas fa-user-alt"></i>&nbsp;Secretaria</h6>
+                <p>
+                <div class="dropdown">
+                    <button class="btn btn-sm btn-danger dropdown-toggle mr-1 dropleft" type="button"
+                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Serviços
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item"
+                            href="http://sistema.oswaldocruz.br:9000/UniversusNet/Seguro/Login.aspx?ReturnUrl=%2fUniversusNet%2fdefault.aspx">Central
+                            do Aluno</a>
+                        <a class="dropdown-item" href=" javascript: showFichaFinanceira();">Ficha Financeira Aluno</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="https://www.oswaldocruz.br/adm/default.asp">Área
+                            Administrativa</a>
+                        <a class="dropdown-item"
+                            href="http://sistema.oswaldocruz.br:9000/UniversusNet/Seguro/Login.aspx?ReturnUrl=%2funiversusnet%2fdefault.aspx">Central
+                            do Professor</a>
+
+                    </div>
+                </div>
+                </p>
+                <ul class="text-small list-unstyled">
+                    <li><a style="color: #1b2034; font-size: .8rem;"
+                            href="mailto: pos@oswaldocruz.br">pos@oswaldocruz.br</a></li>
+                    <li><a style="color: #1b2034; font-size: .8rem;" href="#">11 3824-3660 ramais 3970 ou 3971</a></li>
+                    <li><a style="color: #1b2034; font-size: .8rem;" href="#">Atendimento de segunda a sexta das 14h às
+                            20h</a></li>
+                    <li><a style="color: #1b2034; font-size: .8rem;"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h6><i class="far fa-calendar-alt"></i>&nbsp;Calendários</h6>
+                <ul class="text-small list-unstyled">
+                    <li><a style="color: #1b2034; font-size: .8rem;"
+                            href="https://www.oswaldocruz.br/download/arquivos/40471.pdf">Calendário
+                            TCC - finais de semana</a></li>
+                    <li><a style="color: #1b2034; font-size: .8rem;"
+                            href="https://www.oswaldocruz.br/download/arquivos/43585.pdf">Calendário
+                            2019 - MTC</a></li>
+                    <li><a style="color: #1b2034; font-size: .8rem;"
+                            href="https://www.oswaldocruz.br/download/arquivos/44430.pdf">Calendário
+                            2020</a></li>
+                    <li><a style="color: #1b2034; font-size: .8rem;"
+                            href="https://www.oswaldocruz.br/download/arquivos/44656.pdf">Calendário
+                            2020 - área de gestão e negócios</a></li>
+                    <li><a style="color: #1b2034; font-size: .8rem;"
+                            href="https://www.oswaldocruz.br/download/arquivos/48407.pdf">Calendário
+                            2021 - finais de semana</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h6><i class="far fa-file-pdf"></i>&nbsp;Documentos</h6>
+                <ul class="text-small list-unstyled">
+                    <li><a style="color: #1b2034; font-size: .8rem;"
+                            href="http://www.oswaldocruz.br/download/arquivos/45399.pdf">Manual do
+                            Aluno</a></li>
+                    <li><a style="color: #1b2034; font-size: .8rem;"
+                            href="https://www.oswaldocruz.br/pos/MetodologiaTrabalhoCientifico.asp">Trabalho de
+                            Conclusão de Curso</a></li>
+                    <li><a style="color: #1b2034; font-size: .8rem;"
+                            href="http://www.oswaldocruz.br/download/arquivos/45398.pdf">Resolução CPG
+                            número 02/2019</a></li>
+                    <li><a style="color: #1b2034; font-size: .8rem;"
+                            href="http://www.oswaldocruz.br/download/arquivos/45397.pdf">Resolução CPG
+                            número 01/2020</a></li>
+                    <li><a style="color: #1b2034; font-size: .8rem;"
+                            href="http://www.oswaldocruz.br/download/arquivos/45396.pdf">Ato número
+                            1/2019</a></li>
+                    <!--<li><a style="color: #1b2034; font-size: .8rem;" href="#">Política de Privacidade</a></li>-->
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/sip3/assets/js/dist/jquery.slim.min.js"></script>
+    <script src="/sip3/assets/js/dist/bootstrap.bundle.min.js"></script>
+    <script src="https://oswaldocruz.br/alunos/assets/js/financeiro/ficha.financeira.js"></script>
+    <script src="/sip3/assets/js/dist/jquery.tablesorter.js"></script>
+    <script src="/sip3/assets/js/app/Cursos.js"></script>
+
+    <div class="modal fade bd-example-modal-xl" style="color: black;" id="modalCursosInCompany" tabindex="-1"
+        role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Cursos In Company</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h3>Seu time de colaboradores sempre atualizado e engajado</h3>
+                    <p>
+                    <h6>
+                        Nosso Programa In Company permite adequar cursos, módulos ou disciplinas às
+                        necessidade de capacitação, atualização ou formação de times de colaboradores em
+                        empresas, organizações públicas, entidades do
+                        terceiro setor etc.
+                    </h6>
+                    </p>
+                    <ul class="list-group">
+                        <li
+                            class="list-group-item d-flex justify-content-between align-items-center list-group-item-warning">
+                            Gerente de Projeto Exclusivo
+                            <span class="h4"><i class="fas fa-user-tie"></i></span>
+                        </li>
+
+                        <li
+                            class="list-group-item d-flex justify-content-between align-items-center list-group-item-warning">
+                            Expoentes do mercado de trabalho entre doutores, mestres e especialistas
+                            <span class="h4"><i class="fas fa-users"></i></span>
+                        </li>
+
+                        <li
+                            class="list-group-item d-flex justify-content-between align-items-center list-group-item-warning">
+                            Conteúdo e metodologia didática
+                            <span class="h4"><i class="fas fa-book"></i></span>
+                        </li>
+
+                        <li
+                            class="list-group-item d-flex justify-content-between align-items-center list-group-item-warning">
+                            Adequação às necessidades da companhia
+                            <span class="h4"><i class="fas fa-people-carry"></i></span>
+                        </li>
+
+                        <li
+                            class="list-group-item d-flex justify-content-between align-items-center list-group-item-warning">
+                            Liberdade para definir o cronograma dos projetos
+                            <span class="h4"><i class="fas fa-user-clock"></i></span>
+                        </li>
+
+                        <li
+                            class="list-group-item d-flex justify-content-between align-items-center list-group-item-warning">
+                            Liberdade para aplicar os projetos em qualquer cidade do Brasil
+                            <span class="h4"><i class="fas fa-map-marked-alt"></i></span>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL FICHA FINANCEIRA - INI -->
+    <div class="modal fade bd-example-modal-xl" style="color: black;" id="modalFichaFinanceiraPos" tabindex="-1"
+        role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Pós-Graduação Oswaldo Cruz - Financeiro</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="divFichaFinanceira"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-warning" data-dismiss="modal"
+                        onclick=" naoMostrarFichaFinanceiraPos(); ">Não mostrar mais</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+        <script> //fichaFinanceiraPos();  </script> <!-- TRATAR NA VERSÃO FINAL -->
+    </div>
+    <!-- MODAL FICHA FINANCEIRA - FIM -->
+
+</body>
+
+</html>
